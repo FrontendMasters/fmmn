@@ -266,6 +266,7 @@ Forms in html are often delivered with a POST:
 POST /form HTTP/1.1
 Host: localhost
 Content-Length: 51
+Content-Type: application/x-www-form-urlencoded
 
 title=whatever&date=1421044443&body=beep%20boop%21
 ```
@@ -274,16 +275,17 @@ using this simple node http server,
 we can decode the POST body:
 
 ``` js
-var http = require('http');
-var parseform = require('body/any');
+var http = require('http')
+var parseform = require('body/any')
 
 var server = http.createServer(function (req, res) {
-    parseform(req, res, function (err, params) {
-        console.log(params);
-        res.end('ok\n');
-    });
-});
-server.listen(5000);
+  console.log(req.method, req.url, req.heders)
+  parseform(req, res, function (err, params) {
+    console.log(params)
+    res.end('ok\n')
+  })
+})
+server.listen(5000)
 ```
 ---
 When the POST payload arrives and is decoded, we get:

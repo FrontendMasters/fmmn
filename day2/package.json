@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "body": "^5.1.0",
     "collect-stream": "^1.2.1",
     "concat-stream": "^1.6.0",
     "duplexify": "^3.5.0",
