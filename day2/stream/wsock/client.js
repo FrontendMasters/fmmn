@@ -21,9 +21,7 @@ function update () {
   </div>`)
   function onsubmit (ev) {
     ev.preventDefault()
-    console.log(this.elements.msg.value)
     stream.write(this.elements.msg.value + '\n')
     this.reset()
   }
 }
-
