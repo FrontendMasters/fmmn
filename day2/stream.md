@@ -439,6 +439,29 @@ function end () {
 ```
 
 ---
+# split2
+
+A note about split2:
+
+In each line, the trailing `'\n'` is removed.
+
+---
+# split2
+
+You can give `split()` a custom string or regex to split on:
+
+This program splits on all whitespace:
+
+``` js
+var split = require('split2')
+process.stdin.pipe(split(/\s+/))
+  .pipe(through(function (buf, enc, next) {
+    console.log('word=' + buf.toString())
+    next()
+  }))
+```
+
+---
 # websocket-stream
 
 streaming websockets in node and the browser
@@ -505,29 +528,6 @@ function update () {
     this.reset()
   }
 }
-```
-
----
-# split2
-
-A note about split2:
-
-In each line, the trailing `'\n'` is removed.
-
----
-# split2
-
-You can give `split()` a custom string or regex to split on:
-
-This program splits on all whitespace:
-
-``` js
-var split = require('split2')
-process.stdin.pipe(split(/\s+/))
-  .pipe(through(function (buf, enc, next) {
-    console.log('word=' + buf.toString())
-    next()
-  }))
 ```
 
 ---
