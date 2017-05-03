@@ -12,8 +12,10 @@ var server = http.createServer(function (req, res) {
     var size = 0
     return through(function (buf, enc, next) {
       size += buf.length
-      if (size > 20) next(null, null)
-      else next(null, buf)
+      if (size > 20) {
+        res.end('ETOOBIG\n')
+        //next(null, null)
+      } else next(null, buf)
     })
   }
   function onbody (body) {
