@@ -1,0 +1,1 @@
+<body><script src="bundle.js"></script></body>
