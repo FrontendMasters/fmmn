@@ -12,9 +12,12 @@
     "pumpify": "^1.3.5",
     "readable-stream": "^2.2.9",
     "rpc-stream": "^2.1.2",
+    "signalhub": "^4.8.0",
+    "simple-peer": "^7.0.0",
     "split2": "^2.1.1",
     "through2": "^2.0.3",
     "to2": "^1.0.0",
+    "webrtc-swarm": "^2.8.0",
     "websocket-stream": "^4.0.0",
     "yo-yo": "^1.4.0"
   }
