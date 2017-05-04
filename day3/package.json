@@ -13,7 +13,9 @@
     "pull-stream-to-stream": "^1.3.4",
     "secret-handshake": "^1.1.7",
     "strftime": "^0.10.0",
+    "subleveldown": "^2.1.0",
     "through2": "^2.0.3",
-    "to2": "^1.0.0"
+    "to2": "^1.0.0",
+    "yo-yo": "^1.4.0"
   }
 }
