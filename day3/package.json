@@ -13,10 +13,12 @@
     "lexicographic-integer": "^1.1.0",
     "pull-stream-to-stream": "^1.3.4",
     "secret-handshake": "^1.1.7",
+    "signalhub": "^4.8.0",
     "strftime": "^0.10.0",
     "subleveldown": "^2.1.0",
     "through2": "^2.0.3",
     "to2": "^1.0.0",
+    "webrtc-swarm": "^2.8.0",
     "yo-yo": "^1.4.0"
   }
 }
