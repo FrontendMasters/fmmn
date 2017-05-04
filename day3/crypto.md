@@ -110,10 +110,10 @@ var clearText = sodium.crypto_secretbox_open_easy(cipherText, nonce, key)
 
 ``` js
 sodium.crypto_box_easy()
+sodium.crypto_box_open_easy()
 ```
 
----
-# sodium public key encrypt detached
+etc
 
 ---
 # secret connection

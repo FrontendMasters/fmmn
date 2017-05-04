@@ -72,6 +72,11 @@ kv.get(key, function (err, values) {
 ```
 
 ---
+# hyperlog-sodium
+
+more easily configure hyperlog for cryptographic signing
+
+---
 # kappa architecture examples
 
 * secure scuttlebutt - p2p social database

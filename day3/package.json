@@ -6,6 +6,7 @@
     "hyperkv": "^2.0.3",
     "hyperlog": "^4.12.1",
     "hyperlog-index": "^5.2.0",
+    "hyperlog-sodium": "^2.0.0",
     "level": "^1.6.0",
     "level-browserify": "^1.1.0",
     "level-livefeed": "^0.2.0",
