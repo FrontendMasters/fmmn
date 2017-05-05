@@ -170,7 +170,7 @@ console.log(glsl`
   }
 `)
 
-budo -t glslify main.js
+budo main -- -t glslify
 
 ---
 # audio
