@@ -13,6 +13,7 @@ var count = 0
 var streams = []
 wsock.createServer({ server: server }, function (stream) {
   streams.push(stream)
+  console.log('CONNECTED', streams.length)
   count++
   streams.forEach(function (s) {
     s.write(count + '\n')
@@ -20,5 +21,6 @@ wsock.createServer({ server: server }, function (stream) {
   onend(stream, function () {
     var ix = streams.indexOf(stream)
     streams.splice(ix,1)
+    console.log('DISCONNECTED', streams.length)
   })
 })

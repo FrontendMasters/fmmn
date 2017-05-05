@@ -5,6 +5,7 @@ var to = require('to2')
 var stream = wsock('ws://' + location.host)
 stream.pipe(split()).pipe(to(function (buf, enc, next) {
   bus.emit('set-visitors', Number(buf.toString()))
+  bus.emit('update')
   next()
 }))
 
