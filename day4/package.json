@@ -20,6 +20,7 @@
     "nyc": "^10.3.0",
     "regl": "^1.3.0",
     "regl-camera": "^1.1.2",
+    "regl-feedback": "^1.0.0",
     "routes": "^2.1.0",
     "sheetify": "^6.0.2",
     "strftime": "^0.10.0",
