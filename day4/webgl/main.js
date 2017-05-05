@@ -5,6 +5,9 @@ var bunny = require('bunny')
 var anormals = require('angle-normals')
 var glsl = require('glslify')
 var feedback = require('regl-feedback')
+var webaudio = require('webaudio')
+var b = webaudio(require('./song.js'))
+b.play()
 
 function createBlob (regl) {
   var mesh = bunny //icosphere(3)
