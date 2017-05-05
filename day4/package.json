@@ -6,6 +6,7 @@
     "baudio": "^2.1.2",
     "browser-run": "^4.0.2",
     "choo": "^5.4.0",
+    "concat-stream": "^1.6.0",
     "coverify": "^1.4.1",
     "ecstatic": "^2.1.0",
     "falafel": "^2.1.0",
