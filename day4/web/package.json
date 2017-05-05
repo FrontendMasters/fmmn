@@ -1,5 +1,10 @@
 {
   "scripts": {
-    "dev": "budo yo.js"
+    "dev": "watchify yo.js -o public/bundle.js -dv",
+    "build": "browserify yo.js | uglifyjs | gzip > public/bundle.js.gz"
+  },
+  "dependencies": {
+    "end-of-stream": "^1.4.0",
+    "to2": "^1.0.0"
   }
 }
