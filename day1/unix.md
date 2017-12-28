@@ -1140,7 +1140,7 @@ date +%Y
 and we can use this value in a message with echo:
 
 ```
-~ $ Greetings from the year `date +%Y`.
+~ $ echo Greetings from the year `date +%Y`.
 Greetings from the year 2014.
 ```
 
